@@ -4,7 +4,7 @@ import 'bootstrap/js/modal.js';
 import { NegociacaoController } from './controllers/NegociacaoController.js';
 import { Negociacao } from './domain/index.js';
 
-$('h1').on('click',() => alert('você me clicou'));
+$('h1').on('click', () => alert('você me clicou'));
 console.log($('h1').modal);
 
 const controller = new NegociacaoController();
@@ -14,11 +14,11 @@ headers.set('Content-Type', 'application/json');
 const body = JSON.stringify(negociacao);
 const method = 'POST';
 
-const config = { 
+const config = {
     method,
     headers,
-    body 
+    body
 };
 
-fetch('http://localhost:3000/negociacoes', config)
-    .then(() => console.log('Dado enviado com sucesso'));
+fetch('http://localhost:3000/negociacoes', config).then(() => console.log('Dado enviado com sucesso'));
+//# sourceMappingURL=app.js.map
